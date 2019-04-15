@@ -1,8 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## 一个简书项目
 
-In the project directory, you can run:
+由REACT 脚手架重零开始
 
 ### `npm start`
 
