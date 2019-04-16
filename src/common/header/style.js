@@ -93,7 +93,7 @@ export const SearchWrapper = styled.div`
         transition: all 0.2s ease-out;
     }
     .slide-enter-active {
-        width: 240px;
+        width: 230px;
     }
     .slide-exit{
         transition: all 0.2s ease-out;
