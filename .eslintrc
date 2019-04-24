@@ -43,6 +43,7 @@
       "react/jsx-closing-tag-location": 0,
       "react/sort-comp": 0,
       "react/jsx-no-bind": 0,
+      "class-methods-use-this": "off",
       "react/no-danger": 0,
       "react/jsx-first-prop-new-line": 0,
       "react/jsx-filename-extension": 0,

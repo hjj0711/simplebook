@@ -62,28 +62,29 @@ export const NavSearch = styled.input.attrs({
         color: #999;
     }
     &.focused{
-        width:220px;
+        width:230px;
         // transition: width 0.6s;
         // -moz-transition: width 0.6s; /* Firefox 4 */
         // -webkit-transition: width 0.6s; /* Safari 和 Chrome */
         // -o-transition: width 0.6s; /* Opera */
     }
 `
-export const Addition = styled.div`
+export const Addition = styled.div`                                                                                                     
     height:56px;
     min-width: 230px;
 `
 export const SearchWrapper = styled.div`
     float: left;
     position: relative;
-    .iconfont {
+    .zoom {
         position: absolute;
+        text-align: center;
         right: 5px;
-        bottom: 5px;
+        top: 13px;
         width:30px;
         border-radius: 30px;
         line-height: 30px;
-        &.focus {
+        &.focused {
             background: #777;
             color: #FFF;
         }
@@ -117,5 +118,55 @@ export const Button = styled.div`
     &.writing {
         color: #fff;
         background: #ec6149;
+    }
+`
+export const SearchInfo = styled.div`
+    position:absolute;
+    left:0;
+    top:56px;
+    width:260px;
+    padding:0 20px;
+    box-shadow: 0 0 8px rgba(0,0);
+    box-shadow: 0 0 5px #888888;
+`
+export const SearchInfoTitile = styled.span`
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    line-height: 14px;
+    color:#969696;
+`
+export const SearchInfoSwitch = styled.span`
+    display: inline-block;
+    margin-top: 20px;
+    float: right;
+    font-size:13px;
+    color: #7878;
+    &:hover{
+        color: #969696;
+        cursor:pointer;  
+    }
+    .spin{
+        margin-right: 4px;
+        font-size 12px;
+        display: block;
+        float: left;
+        transition: all .2s ease-in;
+        transform-origin: center center;
+    }
+`
+export const SearchInfoItem = styled.span`
+    float:left;
+    margin-right:10px;
+    margin-bottom:15px;
+    line-height:20px;
+    padding: 0 5px;
+    font-size:12px;
+    border:1px solid #ddd;
+    color: #7878;
+    border-radius: 3px;
+    &:hover{
+        color: #969696;
+        cursor:pointer;  
     }
 `

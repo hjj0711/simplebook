@@ -4,14 +4,16 @@ import Header from './common/header'
 import IconStyle from './statics/iconfont/iconfont'
 import GlobalStyle from './style'
 import store from './store'
+import Body from './common/body'
 
 class App extends Component {
   render () {
     return (
       <Provider store={store}>
         <Header />
-        <IconStyle />
+        <Body />
         <GlobalStyle />
+        <IconStyle />
       </Provider>
     )
   }
