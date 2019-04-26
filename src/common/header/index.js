@@ -92,6 +92,11 @@ const mapDispathToProps = (dispatch) => {
     handleMouseEnter () { // 鼠标移入触发action
       dispatch(actionCreators.mouseEnter())
     },
+      dispatch(actionCreators.searchFocus())
+    },
+    handleMouseEnter () { // 鼠标移入触发action
+      dispatch(actionCreators.mouseEnter())
+    },
     handleMouseLeave () {
       dispatch(actionCreators.mouseLeave())
     },

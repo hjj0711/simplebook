@@ -128,6 +128,7 @@ export const SearchInfo = styled.div`
     padding:0 20px;
     box-shadow: 0 0 8px rgba(0,0);
     box-shadow: 0 0 5px #888888;
+    background: #fff;
 `
 export const SearchInfoTitile = styled.span`
     display: inline-block;
