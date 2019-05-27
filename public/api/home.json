@@ -1,0 +1,96 @@
+{
+    "success": true,
+    "data":{
+        "topicList": [
+            {
+              "id": 1,
+              "title": "社会热点",
+              "imgurl": "https://oimageb4.ydstatic.com/image?id=2536164669177268021&product=adpublish&w=300&h=200&sc=0&rm=2&gsb=0&gsbd=60"
+            },
+            {
+              "id": 2,
+              "title": "手绘",
+              "imgurl": "//upload-images.jianshu.io/upload_images/2535252-5c953f8e96dd3f0e?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+              "id": 3,
+              "title": "社会热点",
+              "imgurl": "//upload-images.jianshu.io/upload_images/9276238-cf054e284e2d9f4b?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+              "id": 4,
+              "title": "工作",
+              "imgurl": "//upload-images.jianshu.io/upload_images/9276238-cf054e284e2d9f4b?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+              "id": 5, 
+              "title": "毕业",
+              "imgurl": "https://oimagea5.ydstatic.com/image?id=-8699359565708367781&product=adpublish&w=300&h=200&sc=0&rm=2&gsb=0&gsbd=60"
+            },
+            {
+              "id": 6,
+              "title": "manjaro",
+              "imgurl": "//upload-images.jianshu.io/upload_images/7763570-2502b0f1fd56b966.png?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+              "id": 7,
+              "title": "恋爱",
+              "imgurl": "//upload-images.jianshu.io/upload_images/13944745-cd13abd16c19c62d?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+              "id": 8,
+              "title": "手写",
+              "imgurl": "//upload-images.jianshu.io/upload_images/13449428-c2fca4348708bd3b.JPG?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            },
+            {
+              "id": 9,
+              "title": "软件",
+              "imgurl": "//upload-images.jianshu.io/upload_images/11573432-6b4182ff1fabd18d?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            }
+          ],
+          "articleList": [
+              {
+            "id": 1,
+            "title": "流浪大师改头换面，昔日同学纷纷找上门",
+            "detail": "大家好这里是派大星ya！ 大师在流浪，小丑在殿堂”，不少人对最近大火的“流浪大师”沈巍都议论纷纷。如今网络的更新换代速度不断加快，只要你在网络上...",
+            "imgurl": "//upload-images.jianshu.io/upload_images/14753564-99e5e18b050e26ae?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+            }, 
+            {
+            "id": 2,
+            "title": "5月起，广东985/211一年名校本科启动",
+            "detail": "广东上班族现可申请名校一年学制本科，学历可查，含金量高",
+            "imgurl": "https://oimagea5.ydstatic.com/image?id=-8699359565708367781&product=adpublish&w=300&h=200&sc=0&rm=2&gsb=0&gsbd=60"
+          }, {
+            "id": 3,
+            "title": "推荐一款逆天的软件，它能恢复一切误删的文件，用过的都说良心！",
+            "detail": "电脑中的文件误删怎么办？U盘中的文件误删怎么办？单反SD卡中的文件误删怎么恢复？ 相信这些问题每个人多多少少都遇到过，一般遇到这事之后不是寻求身...",
+            "imgurl": "//upload-images.jianshu.io/upload_images/11573432-6b4182ff1fabd18d?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+          }, {
+            "id": 4,
+            "title": "什么才是最高明的恋爱方式？",
+            "detail": "前言： 前几天我的一篇文章《舔狗到底有多卑微？》，有粉丝后台留言，“女生有那么难追吗？，一直以来谈的一些女朋友都没怎么正式表白”，然后我给他回复...",
+            "imgurl": "//upload-images.jianshu.io/upload_images/8209050-b0b1fc11d4a24382.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/360/h/240"
+          }
+          ],
+          "appUrl": "//cdn2.jianshu.io/assets/web/download-index-side-qrcode-cb13fc9106a478795f8d10f9f632fccf.png",
+          "articalImgs": [
+              {
+            "id": 1,
+            "url": "//cdn2.jianshu.io/assets/web/banner-s-club-aa8bdf19f8cf729a759da42e4a96f366.png"
+          },
+          { 
+            "id": 2,
+            "url": "https://cdn2.jianshu.io/assets/web/banner-s-7-1a0222c91694a1f38e610be4bf9669be.png"
+          },
+          { 
+            "id": 3,
+            "url": "https://cdn2.jianshu.io/assets/web/banner-s-5-4ba25cf5041931a0ed2062828b4064cb.png" 
+          },
+          { 
+            "id": 4,
+            "url": "https://cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png"
+          }
+          ]
+    }
+    
+  }
