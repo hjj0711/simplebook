@@ -1,23 +1,32 @@
-import React, { Component } from 'react'
+import React, { PureComponent } from 'react'
 import { connect } from 'react-redux'
 import { CSSTransition } from 'react-transition-group'
+import { Link } from 'react-router-dom'
 import { actionCreators } from './store'
-
+import { actionCreators as loginActionCreators } from '../../pages/login/store'
 import {
   HeaderWrapper, Logo, Nav, NavItem, NavSearch, Addition, Button, SearchWrapper, SearchInfo, SearchInfoTitile, SearchInfoSwitch,
   SearchInfoItem,
 } from './style'
 
-class Header extends Component {
+class Header extends PureComponent {
   render () {
-    const { focused, handleInputFocus, handleInputBlur } = this.props
+    const {
+      focused, handleInputFocus, handleInputBlur, login, 
+    } = this.props
     return (
       <HeaderWrapper>
-        <Logo />
+        {/* 注意a标签作跳转时的问题 */}
+        <Link to="/">
+          <Logo />
+        </Link>
         <Nav>
           <NavItem className="left active">首页</NavItem>
           <NavItem className="left">下载App</NavItem>
-          <NavItem className="right">登陆</NavItem>
+          
+          <NavItem className="right">
+            {login ? <NavItem onClick={() => this.props.logout()} className="right">退出</NavItem> : <Link to="login">登陆</Link>}
+          </NavItem>
           <SearchWrapper>
             <CSSTransition
               in={focused}
@@ -39,10 +48,12 @@ class Header extends Component {
           </NavItem>
         </Nav>
         <Addition>
-          <Button className="writing">
-            <span className="iconfont">&#xe6a5;</span>
-            <span>&nbsp;写文章</span>
-          </Button>
+          <Link to="/write">
+            <Button className="writing">
+              <span className="iconfont">&#xe6a5;</span>
+              <span>&nbsp;写文章</span>
+            </Button>
+          </Link>
           <Button className="reg"> 注册</Button>
         </Addition>
       </HeaderWrapper>
@@ -83,6 +94,7 @@ class Header extends Component {
     }
   }
 }
+// mapDispathToProps可以为函数也可以为对象， 用来建立UI组件的参数到store.dispatch，也就是说，他定义了那些用户的操作应该当作action，传给store
 const mapDispathToProps = (dispatch) => {
   return {
     handleInputFocus () {
@@ -104,8 +116,12 @@ const mapDispathToProps = (dispatch) => {
     handleInputBlur () {
       dispatch(actionCreators.searchBlur())
     },
+    logout () {
+      dispatch(loginActionCreators.logout())
+    },
   }
 }
+// mapStateToProps,这是一个函数，从名字可得知，他的作用就是像他的名字那样，建立一个从（外部的）state对象到（UI组件的）props对象的映射关系
 const mapStateToProps = (state) => {
   // return { focused: state.get('Header').get('focused') }  // 和以下、代码一样
   return {
@@ -114,6 +130,7 @@ const mapStateToProps = (state) => {
     page: state.getIn(['Header', 'page']),
     mouseIn: state.getIn(['Header', 'mouseIn']),
     totalPage: state.getIn(['Header', 'totalPage']),
+    login: state.getIn(['Login', 'login']),
   }
 }
 export default connect(mapStateToProps, mapDispathToProps)(Header)

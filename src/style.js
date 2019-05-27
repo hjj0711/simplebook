@@ -33,6 +33,10 @@ const GlobalStyle = createGlobalStyle`
   ol, ul {
     list-style: none;
   }
+  a{  
+    text-decoration: none;  
+    color: #000000;
+} 
   blockquote, q {
     quotes: none;
   }
