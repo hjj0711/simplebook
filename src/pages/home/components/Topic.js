@@ -1,8 +1,8 @@
-import React, { PureComponent } from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { TopicWapprer, TopicItem } from '../style'
 
-class Topic extends PureComponent {
+class Topic extends Component {
   render () {
     const { list } = this.props
     return (
@@ -13,7 +13,7 @@ class Topic extends PureComponent {
               alt="图片"
               className="top_pic"
               src={item.get('imgurl')}
-            /> 
+            />
             {item.get('title')}
           </TopicItem>
         ))

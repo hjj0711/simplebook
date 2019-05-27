@@ -9,7 +9,9 @@ export const HeaderWrapper = styled.div`
     flex-wrap: nowrap;
     flex-direction:row;
 `
-export const Logo = styled.div`
+export const Logo = styled.a.attrs({
+  href: '/',
+})`
     display: block;
     width:100px;
     min-width: 78px;
@@ -36,7 +38,6 @@ export const NavItem = styled.div`
     &.right{
         float: right;
         color:#969696
-        cursor: pointer;
     }
     &.active{
         color: #ea6f5a;
@@ -120,7 +121,6 @@ export const Button = styled.div`
     }
 `
 export const SearchInfo = styled.div`
-    z-index: 2;
     position:absolute;
     left:0;
     top:56px;

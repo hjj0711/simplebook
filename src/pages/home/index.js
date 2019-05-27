@@ -1,33 +1,11 @@
-import React, { PureComponent } from 'react'
-import { connect } from 'react-redux'
-import {
-  HomeWrapper, HomeLeft, HomeRight, BackTop, 
-} from './style.js'
+import React, { Component } from 'react'
+import { HomeWrapper, HomeLeft, HomeRight } from './style.js'
 import Topic from './components/Topic'
 import List from './components/List'
 import Recommend from './components/Recommend'
 import Writer from './components/Writer'
-import { actionCreators } from './components/store'
-import { scrollAnimation } from '../../statics/utils/utils.js'
 
-
-class Home extends PureComponent {
-  componentDidMount () {
-    this.props.changeHomeData()
-    this.bindEvents()
-  }
-  
-  // 滚动隐藏回到顶部
-  bindEvents () {
-    window.addEventListener('scroll', this.props.changeScrollTopShow)
-  }
-
-  // 回到顶部
-  handleScrollTop () {
-    const currentY = document.documentElement.scrollTop || document.body.scrollTop
-    scrollAnimation(currentY, 0)
-  }
-
+class Home extends Component {
   render () {
     return (
       <HomeWrapper>
@@ -40,21 +18,8 @@ class Home extends PureComponent {
           <Recommend />
           <Writer />
         </HomeRight>
-        {this.props.showScroll && <BackTop onClick={this.handleScrollTop}>顶部</BackTop>}
       </HomeWrapper>    
     )
   }
 }
-
-const mapState = state => ({
-  showScroll: state.getIn(['Home', 'showScroll']),
-})
-const mapDispatch = dispatch => ({ // 容器组件
-  changeHomeData () {
-    dispatch(actionCreators.getHomeInfo())
-  },
-  changeScrollTopShow () {
-    dispatch(actionCreators.isShowScroll(document.documentElement.scrollTop))
-  },
-})
-export default connect(mapState, mapDispatch)(Home)
+export default Home
